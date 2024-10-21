@@ -1,0 +1,549 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  }
+  
+  body{
+  font-family:"Rubik",Georgia;
+  }
+  
+  header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  background-color:#D989A6;
+  height: 100%;
+  }
+  
+  .logo-topo img{
+  display: flex;
+  flex-wrap:wrap;
+  padding-left: 35px;
+  padding-top:10px;
+  width:170px;
+  }
+  
+  .links-topo ul{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 35px;
+  gap: 15px;
+  }
+  
+  .links-topo a{
+  text-decoration: none;
+  color:#F2F2F2;
+  font-size:20px;
+  }
+  
+  .links-topo a:hover{
+  color:#A6033F;
+  }
+  
+  .especialidades{
+  margin: 20px;
+  text-align: center;
+  }
+  
+  .links-especialidades a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #D9C5C1;
+  padding-left:10px;
+  padding-right: 10px;
+  border-bottom:2px solid #D989A6;
+  margin: 15px;
+  }
+  
+  .links-especialidades a:hover{
+  color:#A6033F;
+  }
+  
+  .especialidades h1{
+  color:#A6033F;
+  font-size:25px;
+  margin-top:20px;
+  text-shadow: 2px 3px 1px #D9C5C1;
+  }
+  
+  .box-especialidades{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
+  
+  .titulo h3{
+  font-size: 25px;
+  color:#D9C5C1;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 25px;
+  }
+  .titulo p{
+  color: #D9A0AF;
+  margin-bottom: 50px;
+  text-align: center;
+  }
+  
+  .box-especialista{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  }
+  .box-especialista img{
+  width: 350px;
+  height: 30vh;
+  }
+  
+  .tabela-especialistas th{
+  font-size: 20px;
+  color:#A6033F;
+  background-color: #D9C5C1;
+  }
+  
+  .tabela-especialistas td{
+  padding: 5px 10px;
+  text-align: center;
+  }
+  
+  .tabela-especialistas tbody tr:nth-of-type(odd){
+  background-color:#D989A6;
+  color:#F2F2F2;
+  }
+  
+  .tabela-especialistas tbody tr:nth-of-type(even){
+  background-color:#D9C5C1;
+  color:#D989A6;
+  }
+  
+  .tabela-especialistas {
+      width: 600px; /* A tabela terá sempre 600 pixels de largura */
+      margin-left: auto; /* Alinha a tabela à direita */
+  }
+  
+  footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+  background-color: #D989A6;
+  }
+  
+  footer p{
+  font-size:15px;
+  color: #F2F2F2;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom:15px;
+  }
+  
+  
+  /* Iphone XR (414x896) */
+  @media only screen and (max-width: 828px) {
+    /* Ajustes gerais */
+    body {
+      font-size: 14px; /* Tamanho de fonte menor */
+      padding: 10px;
+    }
+  
+    header {
+      flex-direction: column; /* Alinha logo e links um abaixo do outro */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo-topo img {
+      padding: 0;
+      margin-bottom: 10px;
+      width: 150px; /* Reduz tamanho da logo */
+    }
+  
+    .links-topo ul {
+      flex-direction: column; /* Links em uma coluna */
+      padding: 0;
+    }
+  
+    .links-topo a {
+      font-size: 18px; /* Reduz fonte dos links */
+      padding: 10px;
+    }
+  
+    .especialidades h1 {
+      font-size: 20px;
+    }
+  
+    .box-especialidades {
+      flex-direction: column; /* Alinha tudo em uma coluna */
+    }
+  
+    .box-especialista img {
+      width: 300px;
+      height: auto; /* Mantém proporção */
+    }
+  
+    .tabela-especialistas {
+      width: 100%; /* Ajusta tabela à largura da tela */
+    }
+  
+    footer {
+      font-size: 12px; /* Reduz tamanho do texto no rodapé */
+    }
+  }
+  
+  /* Iphone 12 Pro (390x844) */
+  @media only screen and (max-width: 390px) {
+    body {
+      font-size: 15px;
+    }
+    .logo-topo img {
+      width: 150px;
+    }
+  }
+  
+  /* Iphone 14 Pro Max (430x932) */
+  @media only screen and (max-width: 430px) {
+    body {
+      font-size: 16px;
+    }
+    .logo-topo img {
+      width: 160px;
+    }
+  }
+  
+  /* Pixel 7 (412x915) */
+  @media only screen and (max-width: 412px) {
+    body {
+      font-size: 15px;
+    }
+    .logo-topo img {
+      width: 155px;
+    }
+  }
+  
+  /* Galaxy S8 (360x740) */
+  @media only screen and (max-width: 360px) {
+    body {
+      font-size: 14px;
+    }
+    .logo-topo img {
+      width: 140px;
+    }
+    .tabela-especialistas {
+      width: 100%;
+    }
+  }
+  
+  /* Galaxy S20 (320x640) */
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 13px;
+    }
+    .logo-topo img {
+      width: 130px;
+    }
+    .tabela-especialistas {
+      width: 100%;
+    }
+  }
+  
+  /* iPad Mini (768x1024) */
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 17px;
+    }
+    .logo-topo img {
+      width: 180px;
+    }
+
+  }
+  
+  /* iPad Air (820x1180) */
+  @media only screen and (max-width: 820px) {
+    body {
+      font-size: 18px;
+    }
+    .logo-topo img {
+      width: 190px;
+    }
+
+
+  }
+  
+  /* iPad Pro (1024x1366) */
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+    .logo-topo img {
+      width: 200px;
+    }
+  }
+  
+  /* Surface Pro (1280x768) */
+  @media only screen and (max-width: 1280px) {
+    body {
+      font-size: 16px; /* Um tamanho de fonte intermediário */
+      padding: 20px; /* Adiciona algum espaçamento nas laterais */
+    }
+  
+    header {
+      flex-direction: row; /* Mantém a disposição horizontal no Surface Pro */
+      justify-content: space-between; /* Espaça a logo e os links */
+      padding: 10px;
+    }
+  
+    .logo-topo img {
+      width: 180px; /* Ajusta o tamanho da logo */
+    }
+  
+    .links-topo ul {
+      display: flex;
+      gap: 20px; /* Espaça melhor os links no menu */
+    }
+  
+    .links-topo a {
+      font-size: 18px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+      padding: 10px;
+    }
+  
+    .especialidades h1 {
+      font-size: 24px; /* Mantém um título mais visível */
+    }
+  
+    .box-especialidades {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Coloca 2 colunas no grid */
+      gap: 20px;
+    }
+  
+    .box-especialista img {
+      width: 400px; /* Ajusta o tamanho da imagem para Surface Pro */
+      height: auto; /* Mantém a proporção */
+    }
+  
+    .tabela-especialistas {
+      width: 100%; /* Mantém a tabela responsiva */
+    }
+  
+    footer {
+      font-size: 14px; /* Ajusta o tamanho do texto no rodapé */
+      padding: 20px;
+    }
+  }
+  
+  
+  /* Surface Duo (540x720) */
+  @media only screen and (max-width: 540px) {
+    body {
+      font-size: 14px; /* Reduz o tamanho da fonte para uma leitura confortável em telas pequenas */
+      padding: 10px; /* Adiciona padding para dar mais espaço ao conteúdo */
+    }
+  
+    header {
+      flex-direction: column; /* Muda a direção do flex para coluna */
+      align-items: center; /* Centraliza os elementos no header */
+      padding: 15px;
+    }
+  
+    .logo-topo img {
+      width: 120px; /* Diminui o tamanho da logo para caber melhor na tela */
+    }
+  
+    .links-topo ul {
+      display: block; /* Deixa os links em bloco (um abaixo do outro) */
+      text-align: center; /* Centraliza os links */
+    }
+  
+    .links-topo a {
+      font-size: 16px; /* Ajusta o tamanho da fonte dos links para melhor legibilidade */
+      padding: 10px;
+      display: block; /* Links em formato de bloco */
+    }
+  
+    .especialidades h1 {
+      font-size: 20px; /* Reduz o tamanho do título para caber melhor */
+      text-align: center; /* Centraliza o título */
+    }
+  
+    .box-especialidades {
+      display: grid;
+      grid-template-columns: 1fr; /* Alinha as especialidades em uma coluna */
+      gap: 15px;
+    }
+  
+    .box-especialista img {
+      width: 100%; /* Imagem ocupa toda a largura disponível */
+      height: auto; /* Mantém a proporção */
+    }
+  
+    .tabela-especialistas {
+      width: 100%; /* Tabela ocupando toda a largura disponível */
+      font-size: 14px; /* Reduz o tamanho da fonte da tabela */
+    }
+  
+    footer {
+      font-size: 12px; /* Ajusta o tamanho do texto no rodapé para caber na tela */
+      text-align: center; /* Centraliza o rodapé */
+      padding: 20px 10px;
+    }
+  }
+  
+  /* Galaxy Fold5 (1536x2152) */
+  @media only screen and (max-width: 1536px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  
+  /* Galaxy A51 (412x915) */
+  @media only screen and (max-width: 412px) {
+    body {
+      font-size: 15px;
+    }
+  }
+  
+   
+  /* Nest Hub Max (1280x800) */
+  @media only screen and (max-width: 1280px) and (max-height: 800px) {
+    body {
+      font-size: 16px; /* Tamanho de fonte mais moderado para não ficar muito grande */
+      padding: 15px; /* Padding mais sutil */
+    }
+  
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .logo-topo img {
+      width: 150px; /* Reduzi o tamanho da logo para evitar que fique muito grande */
+    }
+  
+    .links-topo ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .links-topo a {
+      font-size: 16px; /* Ajustei para 16px, que é mais equilibrado para o Nest Hub Max */
+      padding: 10px 15px; /* Padding reduzido para deixar os links mais compactos */
+    }
+  
+    .especialidades h1 {
+      font-size: 22px; /* Tamanho do título menor para se ajustar melhor à tela */
+      text-align: center; /* Centralizei o título para um layout mais harmônico */
+    }
+  
+    .box-especialidades {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Usei duas colunas para um layout mais simples */
+      gap: 15px;
+    }
+  
+    .box-especialista img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; /* Adiciona um toque visual com cantos arredondados */
+    }
+  
+    .tabela-especialistas {
+      width: 100%;
+      font-size: 16px; /* Font-size ajustado para ser mais sutil e legível */
+      margin: 20px 0;
+    }
+  
+    footer {
+      font-size: 14px; /* Tamanho de fonte menor para o rodapé */
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  /* Nest Hub (1024x600) */
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 17px;
+    }
+  }
+  
+  /* iPhone SE (640x1136) */
+  @media only screen and (max-width: 640px) {
+    body {
+      font-size: 14px; /* Redução no tamanho da fonte */
+      padding: 10px;
+    }
+  
+    .logo-topo img {
+      width: 120px; /* Logo menor */
+    }
+  
+    .links-topo a {
+      font-size: 14px; /* Fontes menores */
+      padding: 8px 12px;
+    }
+  
+    .box-especialidades {
+      grid-template-columns: repeat(1, 1fr); /* Apenas uma coluna para caber melhor */
+      gap: 10px;
+    }
+  
+    .box-especialista img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Galaxy Fold (Desdobrado: 1536x2152) */
+  @media only screen and (max-width: 1536px) and (min-height: 2152px) {
+    body {
+      font-size: 18px;
+      padding: 20px;
+    }
+  
+    .logo-topo img {
+      width: 160px;
+    }
+  
+    .links-topo a {
+      font-size: 16px;
+      padding: 12px 18px;
+    }
+  
+    .box-especialidades {
+      grid-template-columns: repeat(3, 1fr); /* Três colunas */
+      gap: 20px;
+    }
+  }
+  
+  /* Galaxy Fold (Dobrado: 832x2268) */
+  @media only screen and (max-width: 832px) and (max-height: 2268px) {
+    body {
+      font-size: 14px;
+      padding: 15px;
+    }
+  
+    .logo-topo img {
+      width: 120px;
+    }
+  
+    .links-topo a {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .box-especialidades {
+      grid-template-columns: repeat(1, 1fr); /* Uma coluna para o modo dobrado */
+      gap: 10px;
+    }
+  }
+  

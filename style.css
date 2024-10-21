@@ -1,0 +1,281 @@
+*{ 
+  margin:0; 
+  box-sizing: border-box; 
+  } 
+  
+  body{ 
+  font-family:"Rubik",Georgia; 
+  } 
+  
+  header{ 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content:space-between; 
+  background-color:#D989A6; 
+  height: 100%; 
+  } 
+  
+  .logo-topo img{ 
+  display: flex; 
+  flex-wrap:wrap; 
+  padding-left: 35px; 
+  padding-top:10px; 
+  width:170px; 
+  } 
+  
+  .links-topo ul{ 
+  display: flex; 
+  flex-wrap:wrap; 
+  padding: 35px; 
+  gap: 15px; 
+  } 
+  
+  .links-topo a{ 
+  text-decoration: none; 
+  color:#F2F2F2; 
+  font-size:20px; 
+  } 
+  
+  .links-topo a:hover{ 
+  color:#A6033F; 
+  } 
+  
+  .banner{ 
+  background-image: url(imagens/recepcao.png); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 90vh; 
+  display:flex; 
+  flex-wrap: wrap; 
+  } 
+  
+  .banner h1{ 
+  font-size: 50px; 
+  color:#F2F2F2; 
+  display: flex; 
+  flex-wrap:wrap; 
+  align-items: center; 
+  line-height: 80px; 
+  padding-bottom:25px; 
+  padding-left: 35px; 
+  text-shadow:4px 4px 1px #000000; 
+  } 
+  
+  .sobre, .container-especialidades{ 
+  display:flex; 
+  flex-wrap: wrap; 
+  align-items: center; 
+  justify-content: center; 
+  max-width: 1024px; 
+  margin: 25px auto; 
+  } 
+  
+  .sobre H2,.container-especialidades h2{ 
+  color:#D9C5C1; 
+  font-size: 25px; 
+  text-align: center; 
+  margin: 20px auto; 
+  line-height: 25px; 
+  } 
+  
+  .sobre p,.container-especialidades p{ 
+  color:#D9A0AF; 
+  text-align: center; 
+  margin-top:25px; 
+  } 
+  
+  article{ 
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: column; 
+  color:#D9A0AF; 
+  } 
+  
+  article h3{ 
+  padding:15px; 
+  color:#D9C5C1; 
+  } 
+  
+  article li{ 
+  line-height:25px; 
+  } 
+  
+  .container-especialidades img{ 
+  margin:20px; 
+  width: 300px; 
+  border-radius: 10px; 
+  box-shadow: 0px 1px 10px rgb(0 0 0 / 50%); 
+  } 
+  
+  .container-especialidades figcaption { 
+  text-align: center; 
+  text-transform: uppercase; 
+  color:#d9c5c1; 
+  } 
+  
+  .container-especialidades a{ 
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-top:35px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  padding: 10px 25px; 
+  background-color: #D989A6; 
+  border-radius: 10px; 
+  color: #F2F2F2; 
+  } 
+  
+  .Contato{ 
+  display:flex; 
+  flex-wrap: wrap; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 90px auto; 
+  gap:25px; 
+  } 
+  
+  .Contato h3{ 
+  font-size:30px; 
+  font-weight: bold; 
+  color:#D9C5C1; 
+  } 
+  
+  span{ 
+  font-weight: bold; 
+  color:#D96A9E; 
+  } 
+  
+  footer{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-items: center;  
+    background-color: #D989A6; 
+    }
+  
+  footer p{ 
+  font-size:15px; 
+  color: #F2F2F2; 
+  font-weight: 300; 
+  line-height: 30px; 
+  margin-bottom:15px; 
+  } 
+
+/*INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 1024 PIXELS*/
+@media (max-width: 1024px) {
+  .banner { height: 400px;}
+  footer{height: 40vh;}
+}
+/*FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 1024 PIXELS*/
+
+/*INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 768 PIXELS*/
+@media (max-width: 768px) {
+  .banner { height: 300px;}
+  .sobre img { display: none;}
+  .container-especialidades {justify-content: center;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap; } 
+    .container-especialidades figure { width: calc(100% / 2 - 20px);
+    margin: 10px; }
+    .Contato p{text-align: center;}
+    footer{height: 40vh;}
+    }
+/*FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 768 PIXELS*/
+ 
+/*INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 425 PIXELS*/
+@media (max-width: 425px) {
+  .banner { height: 200px;}
+  .banner h1 { font-size: 20px;}
+  .container-especialidades figure{width: 100%; 
+    margin: 0;
+  justify-content: center; }
+    footer p{text-align: center;
+  line-height: 20px;
+    }
+    .Contato p{font-size:12px;
+    text-align: justify;}
+    footer{height: 40vh;}
+   }
+  
+/* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 425 PIXELS*/
+
+
+/*INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 430 PIXELS*/
+@media (max-width: 430px) { 
+  .banner { height: 250px; } 
+  .banner h1 { font-size: 18px; padding-left: 10px;} 
+  .container-especialidades figure{width: 100%; 
+    margin: 0;
+  justify-content: center; }
+  footer p{height: 30px;
+}
+  }
+ /* FIM REGRAS PARA DISPOSITIVOS COM LARGURA MÁXIMA DE 430 PIXELS*/
+
+ /*INICIO REGRAS PARA DISPOSITIVOS COM LARGURA MINIMA DE 1024 PIXELS E MAXIMA LARGURA DE 1366 PIXELS*/
+@media (min-width: 1024px) and (max-width: 1366px) { 
+  .banner { height: 500px; } 
+  .container-especialidades figure { width: calc(33.33% - 10px); }
+  footer { height:auto; padding: 20px 10px; 
+  }
+ 
+ } 
+ /*FIM REGRAS PARA DISPOSITIVOS COM LARGURA MINIMA DE 1024 PIXELS E MAXIMA LARGURA DE 1366 PIXELS*/
+
+ /* INICIO REGRAS PARA DISPOSITIVOS COMO O SURFACE DUO */
+  @media (max-width: 540px) 
+  { .banner { height: 250px; } 
+  .banner h1 { font-size: 18px; padding-left: 15px; } 
+  .container-especialidades figure { width: 100%; margin: 0; justify-content: center; } 
+  footer { height: auto; padding: 20px 10px; } 
+  footer p { text-align: center; line-height: 15px; } 
+  .Contato p { font-size: 14px; text-align: center; } 
+  /* Centralizar as imagens dentro do container */ 
+  .container-especialidades { text-align: center; } 
+  .container-especialidades figure { margin: 0 auto; } }
+   /* FIM REGRAS PARA DISPOSITIVOS COMO O SURFACE DUO */
+
+   /* INICIO REGRAS PARA DISPOSITIVOS COMO O IPAD AIR */
+   @media (min-width: 820px) and (min-height:1180px){
+    .banner { height: 300px;}
+    .sobre img { display: none;}
+    .container-especialidades {justify-content: center;
+      width:100%;
+      display: flex;
+      flex-wrap: wrap; } 
+      .container-especialidades figure { width: calc(100% / 2 - 20px);
+      margin: 10px; }
+      .Contato p{text-align: center;}
+      footer{height: 50vh;}
+      }
+    /* FIM REGRAS PARA DISPOSITIVOS COMO O IPAD AIR */
+    
+    /* INICIO REGRAS PARA DISPOSITIVOS COMO O SURFACE PRO 7 */
+    @media (min-width: 912px) and (min-height:1368px){
+      .banner { height: 300px;}
+      .sobre img { display: none;}
+      .container-especialidades {justify-content: center;
+        width:100%;
+         display: flex;
+        flex-wrap: wrap; } 
+        .container-especialidades figure { width: calc(100% / 2 - 20px);
+        margin: 10px; }
+        .Contato p{text-align: center;}
+        footer{height: 55vh;}
+        }
+    /* FIM REGRAS PARA DISPOSITIVOS COMO O SURFACE PRO 7 */
+    
+    @media (min-width: 1024px) and (min-height:1366px){
+      .banner { height: 300px;}
+      .sobre img { display: none;}
+      .container-especialidades {justify-content: center;
+        width:100%;
+         display: flex;
+        flex-wrap: wrap; } 
+        .container-especialidades figure { width: calc(100% / 2 - 20px);
+        margin: 10px; }
+        .Contato p{text-align: center;}
+        footer{height: 55vh;}
+        }
